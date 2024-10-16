@@ -1,0 +1,75 @@
+html, body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+#content{
+/*   height: 100%; */
+   min-height: 100vh;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  top:0;
+  z-index:30;
+  color: #fccbcb;
+/*   max-width:600px; */
+  margin:auto;
+  pointer-events:none;
+  flex-direction:column;
+  opacity:0;
+  
+/*   max-width: calc(100vw - 4px); */
+}
+/*? is ios:*/
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  #content{
+    min-height: -webkit-fill-available;
+  }
+}
+
+
+
+.card{
+  position:relative;
+
+/*   flex-grow:1; */
+/*   max-width: calc(100vw - 8px); */
+  
+  width: min(800px, calc(100vw - 53px));
+  height: 500px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+/*   align-items:flex-end; */
+}
+.border{
+  border: 2px solid  #fccbcb;
+  
+}
+#address{
+/*   width: 50%; */
+}
+.stamp{
+  position:absolute;
+  top: 20px;
+  right:20px;
+  width:100px;
+  height:100px;
+  
+}
+
+text{
+  font-size:43px;
+/*   text-transform:uppercase; */
+  letter-spacing: 8px;
+  display:block;
+  margin-top: 2px;
+  font-family: Sans-Serif;
+}
+text.small{
+  font-size:36px;
+letter-spacing: 4px; 
+}
