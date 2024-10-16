@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>pixpaint</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAACVBMVEUAAAAAAAD///+D3c/SAAAAA3RSTlMA//9EUNYhAAAA1klEQVR4nHWRMc7DIAyFH0gMyc4RMvQWHMEDRlWmjFVPwSGaPUulXznl/wxJqg61BPr8BA/bAL/CqeYDlZEaBX3ub+niXDHmLm7cV8M42z7Z4SZiMCzMMhzvuTsivbyhOJ3pRQu3hLKNghcxhQeoxYbVbKeGZovQUbkOXFNIB95kYGJIf5f4spNB+ExyCV58PhCCVZcTJ00dM8ZSQ0PW8YeOsXVF/ewKhgPrD4U64JWTuvdzK+e0WbfATfVpngy/79UaPyPIhXG5UOs1+HKJ/nML29fv/APH1zFaX2xTPQAAAABJRU5ErkJggg==" />
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/tweakpane@3.1.0/dist/tweakpane.min.js"></script>
+    <script type="module" crossorigin src="/wams/assets/index.dd16a5fb.js"></script>
+    <link rel="stylesheet" href="/wams/assets/index.29cd7a0e.css">
+  </head>
+
+  <body>
+    <!--   Hello world -->
+    <div id="controlPanel">
+      <div id="buttonPanel">
+        <div id="colorPanel"></div>
+
+        <div class="row">
+          <!-- <button id="undo"><img src="assets/icons/undo.png"></button> -->
+          <!-- <button id="s" class="active">s</button> -->
+          <!-- <button id="m">m</button> -->
+          <!-- <button id="l">l</button> -->
+          <!-- <button id="pen" class="active"><img src="assets/icons/pen.png"></button> -->
+          <!-- <button id="erase"><img src="assets/icons/erase.png"></button> -->
+        </div>
+
+        <!-- <button id="dots"><img src="assets/icons/dots.png"></button> -->
+
+        <!-- <button id="brush"><img src="assets/icons/brush.png"></button>  -->
+
+        <!--         <button id="spray"><img src="assets/icons/spray.png"></button> -->
+        <!--         <button id="crystal"><img src="assets/icons/crystal.png"></button> -->
+
+        <!-- <div class="row"> -->
+
+        <!--         <button id="nudge"><img src="assets/icons/nudge.png"></button> -->
+        <!-- <button id="text" ><img src="assets/icons/text.png"></button>
+
+        <button id="line"><img src="assets/icons/line.png"></button>
+         <button id="rect"><img src="assets/icons/rect.png"></button>
+        
+         <button id="spiral"><img src="assets/icons/spiral.png"></button> -->
+
+        <!-- <button id="fill"><img src="assets/icons/fill.png"></button> -->
+        <!-- </div> -->
+        <div class="row">
+          <textarea id="input" type="text" autocomplete="off"> </textarea>
+
+          <!-- <button id="select"><img src="assets/icons/select.png"></button> -->
+          <!-- <button id="copy"><img src="assets/icons/copy.png"></button> -->
+        </div>
+      </div>
+      <!-- <div id="colorPanel"></div> -->
+    </div>
+
+    <canvas id="waveform"></canvas>
+    <canvas id="playback"></canvas>
+    <canvas id="hud"></canvas>
+    <canvas id="drawing"></canvas>
+
+    <div id="tweaks"></div>
+    <details id="info">
+      <summary><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAABlBMVEX///8AAABVwtN+AAAA/UlEQVR4nJ3SSw4CIQwG4BIWLHsEjsLNhKNxlDkCiRsXZGr/lkkcH7OQ6PhFXtr+RH+PINvBLPtBEemupNyPeR3NWOUuvjGIUJEHGPUj+eKE7UVAFntgH0/iHu3kPCh3siPKRqVTGWDHKxsbyGA1JtwhtiaCek/R66eTnGFxXzM+GR4frGfqNZn8wEvmZtuuOT/I+u+nfWPv/SvrL2J39pJ8oS7ivtiN5Ux+4fbOimYN4+0ntd7sv/Xg9HqfaRXX0iujFV9A6xtJU7Kx9jOt85oCZbVI5cEteP4YVfPMJUHsFntYoYwyWLzTAfEcq6dKF1K7koAsr3ksbvT3eALzmLKW/+D4UAAAAABJRU5ErkJggg==" /></summary>
+      <p>
+        <a href="https://maxbittker.com">max bittker</a>
+        <br />
+        inspired by <br /><a href="https://whichlight.com/">kawandeep virdee</a
+        >'s<br />
+        <a href="https://whichlight.github.io/draw-play/grubs.html">"grubs"</a>
+      </p>
+    </details>
+
+    <!-- <button id="send">info</button>
+  <-->
+    <div id="content">
+      <text class="small"> write me a letter?</text>
+
+      <div class="card border" id="card">
+        <div class="stamp border"></div>
+        <div id="address">
+          <text> to: Max </text>
+          <text> from: </text>
+        </div>
+      </div>
+    </div>
+    <!--   <script src="https://replit.com/public/js/replit-badge.js" theme="dark" defer></script> -->
+  </body>
+  
+  
+</html>
